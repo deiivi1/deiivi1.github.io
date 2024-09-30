@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Educativo INED</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: rgb(33, 33, 33); /* Fondo de la página */
+            color: white; /* Texto en blanco */
+        }
+        header, nav, footer {
+            background-color: rgb(23, 23, 23); /* Color para navbar, encabezado y pie de página */
+            color: white; /* Texto en blanco */
+        }
+        .card {
+            background-color: rgb(33, 33, 33); /* Fondo de las cards */
+            border-color: rgb(rgb(0, 86, 179)); /* Borde de las cards */
+        }
+        .nav-link, .navbar-brand {
+            color: white !important; /* Asegura que los enlaces en la navbar sean blancos */
+        }
+        .list-group-item {
+            background-color: rgb(33, 33, 33); /* Fondo de las listas */
+            color: white; /* Texto de las listas */
+            border-color: rgb(rgb(0, 86, 179)); /* Borde de las listas */
+        }
+        /* Cambia el color de la letra a blanco en Módulos de Aprendizaje */
+        #modulos-aprendizaje h2, 
+        #modulos-aprendizaje .card-title, 
+        #modulos-aprendizaje .card-text {
+            color: white; /* Asegura que el texto dentro de la sección sea blanco */
+        }
+        /* Efecto hover para botones */
+        .btn-primary:hover, .btn-secondary:hover {
+            background-color: #0056b3; /* Color de fondo al hacer hover */
+            color: white; /* Asegura que el texto siga siendo blanco al hacer hover */
+        }
+        /* Estilo para navbar al hacer scroll */
+        .navbar-scrolled {
+            background-color: rgb(45, 45, 45) !important; /* Cambia el color de fondo al hacer scroll */
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <!-- Agregamos el ícono al lado del título -->
+            <a class="navbar-brand" href="#">
+                <img src="C:\Users\deiiv\Downloads\logo INED .jpg" alt="Logo Centro INED" class="d-inline-block align-text-top" style="width: 30px; height: 30px;">
+                Centro INED
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#modulos-aprendizaje">Módulos de Aprendizaje</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publicaciones-destacadas">Publicaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#publicaciones-comentarios">Publicaciones y Comentarios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado -->
+    <header class="text-center py-5">
+        <h1>Centro Educativo INED</h1>
+        <p>Ofrecemos una educación de calidad para todos los estudiantes.</p>
+        <a href="#" class="btn btn-primary">Inscribirse</a>
+    </header>
+
+    <!-- Secciones del contenido -->
+    <div class="container mt-4" style="padding-top: 70px;">
+
+        <!-- Módulos de Aprendizaje -->
+        <section id="modulos-aprendizaje" class="mt-4">
+            <h2 class="text-center">Módulos de Aprendizaje</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Aprendizaje Basado en Proyectos</h4>
+                            <p class="card-text">Nuestros módulos fomentan la creatividad y el pensamiento crítico a través de proyectos prácticos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Educacion tecnológica</h4>
+                            <p class="card-text">Integramos la educación tecnológica con la enseñanza de manejo de softwars de uso empresarial.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Desarrollo de Habilidades</h4>
+                            <p class="card-text">Fomentamos la comunicación, colaboración y trabajo en equipo para que los estdiantes exploten sus habilidades.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Publicaciones Destacadas -->
+        <section id="publicaciones-destacadas" class="mt-5">
+            <h2 class="text-center">Publicaciones Destacadas</h2>
+            <ul class="list-group mt-3">
+                <li class="list-group-item">Éxitos de Nuestros Estudiantes: Los estudiantes de INED han sobresalido en ambitos academicos.</li>
+                <li class="list-group-item">Eventos del Centro Educativo: Presentaciones de proyectos, deportes y actividades extracurriculares.</li>
+                <li class="list-group-item">Recursos Educativos: Publicación de artículos y guías para el aprendizaje en diferentes áreas.</li>
+                <li class="list-group-item">Carreras disponibles: Perito contador y bachillerato en computación.</li>
+            </ul>
+        </section>
+
+        <!-- Galería de Fotos -->
+        <section id="galeria" class="mt-5">
+            <h2 class="text-center">Galería de Fotos</h2>
+            <div class="row mt-4">
+                <!-- Aquí puedes agregar las imágenes -->
+                <div class="col-md-4">
+                    <img src="C:\Users\deiiv\Downloads\graduacion ined.jpg" class="img-fluid rounded" alt="Ceremonia de Graduación">
+                    <p class="text-center mt-2">Ceremonia de Graduación</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="C:\Users\deiiv\Downloads\deporte ined.jpg" class="img-fluid rounded" alt="Eventos Deportivos">
+                    <p class="text-center mt-2">Eventos Deportivos</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="C:\Users\deiiv\Downloads\cultura ineb.jpg" class="img-fluid rounded" alt="Eventos Culturales">
+                    <p class="text-center mt-2">Eventos Culturales</p>
+                </div>
+                <!-- Agrega más imágenes aquí -->
+            </div>
+        </section>
+
+        <!-- Publicaciones y Comentarios -->
+        <section id="publicaciones-comentarios" class="mt-5">
+            <h2 class="text-center">Agregar Publicación</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <textarea id="nueva-publicacion" class="form-control" rows="3" placeholder="Escribe una publicación..."></textarea>
+                    <button class="btn btn-primary mt-3" onclick="agregarPublicacion()">Publicar</button>
+                </div>
+            </div>
+            <ul id="lista-publicaciones" class="list-group mt-3"></ul>
+
+            <h2 class="text-center mt-5">Comentarios de Estudiantes</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <textarea id="nuevo-comentario" class="form-control" rows="2" placeholder="Escribe un comentario..."></textarea>
+                    <button class="btn btn-secondary mt-3" onclick="agregarComentario()">Comentar</button>
+                </div>
+            </div>
+            <ul id="lista-comentarios" class="list-group mt-3"></ul>
+        </section>
+
+        <!-- Información de Contacto -->
+        <section id="contacto" class="mt-5">
+            <h2 class="text-center">Información de Contacto</h2>
+            <p class="text-center">Teléfono: (+502) 78330687 | Correo Electrónico: INEDSUMPANGO@gmail.com</p>
+            <p class="text-center">Dirección: Avenida del niño zona 4 Sumpango Sac.</p>
+            <p class="text-center">Sitio Web: <a href="http://www.centroeducativoxyz.com" target="_blank">www.centroeducativoINED.com</a></p>
+            <p class="text-center">Facebook: <a href="https://www.facebook.com/profile.php?id=100063559627992&__tn__=-UC">www.INED.com</a></p>
+
+    </div>
+
+
+    <!-- Pie de página -->
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Centro Educativo INED. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Script para cambiar color de la navbar al hacer scroll -->
+    <script>
+        window.addEventListener('scroll', function() {
+            var navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('navbar-scrolled');
+            } else {
+                navbar.classList.remove('navbar-scrolled');
+            }
+        });
+    </script>
+
+</body>
+</html>
